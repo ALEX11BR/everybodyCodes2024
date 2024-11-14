@@ -3,6 +3,7 @@
 from collections import deque
 from sys import stdin
 
+
 def bfs(tree: dict[str, list[str]]) -> list[str]:
     q = deque()
     q.append(("RR", "R"))
@@ -22,6 +23,7 @@ def bfs(tree: dict[str, list[str]]) -> list[str]:
             pass
 
     return pathsToFruits
+
 
 if __name__ == "__main__":
     tree = {}

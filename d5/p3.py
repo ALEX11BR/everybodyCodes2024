@@ -2,11 +2,14 @@
 
 from sys import stdin
 
+
 def rows2str(rows: list[list[int]]) -> str:
     return "-".join([".".join([str(elem) for elem in row]) for row in rows])
 
+
 if __name__ == "__main__":
-    mat = [[int(num) for num in line.split()] for line in stdin.read().splitlines()]
+    mat = [[int(num) for num in line.split()]
+           for line in stdin.read().splitlines()]
     rows = [[mat[i][j] for i in range(len(mat))] for j in range(len(mat[0]))]
 
     row = 0

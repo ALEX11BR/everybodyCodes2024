@@ -3,7 +3,8 @@
 from sys import stdin
 
 if __name__ == "__main__":
-    mat = [[int(num) for num in line.split()] for line in stdin.read().splitlines()]
+    mat = [[int(num) for num in line.split()]
+           for line in stdin.read().splitlines()]
     rows = [[mat[i][j] for i in range(len(mat))] for j in range(len(mat[0]))]
 
     row = 0
