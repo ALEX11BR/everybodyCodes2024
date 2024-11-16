@@ -5,7 +5,8 @@ from sys import stdin
 
 if __name__ == "__main__":
     numbers = [int(line) for line in stdin.read().splitlines()]
-    bugs = [1, 3, 5, 10, 15, 16, 20, 24, 25, 30, 37, 38, 49, 50, 74, 75, 100, 101]
+    bugs = [1, 3, 5, 10, 15, 16, 20, 24, 25,
+            30, 37, 38, 49, 50, 74, 75, 100, 101]
     limit = max(numbers) + 1
     dyn = [inf] * limit
     for b in bugs:
