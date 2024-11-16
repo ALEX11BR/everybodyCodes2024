@@ -10,7 +10,7 @@ This can be accomplished, for instance, by:
 - heredocs,
 - typing the input followed by a `^D`.
 
-Starting with day 8, the quests were solved in the day they were published.
+Starting with day 8, the quests were solved before the release of the following one.
 
 ## Generate code for a new day
 ```sh
